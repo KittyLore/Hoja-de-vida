@@ -4,146 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .cv-container {
+            width: 850px;
+            margin: 40px auto;
+            background-color: #f5f3f4;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .left-section {
+            width: 35%;
+            background-color: #E6BEAE;
+            padding: 30px;
+            text-align: center;
+        }
+        .right-section {
+            width: 65%;
+            padding: 30px;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000000;
+        }
+        .info-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .info {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #403d39;
+        }
+        .img {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        .img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skill {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="name">
-        <div class="img">
-            <img src="img/img1.jpg" />
-        </div>
-    </div>
-
-    <div class ="name"> 
-            <div class="contenido">
-                <p class="p-1">Loren Stefany Tavera Quiroz</p>
-                <p class="p-1">Estudiante de tecnologia en desarrollo de software</p>
+    <main class="cv-container">
+        <aside class="left-section">
+            <div class="img">
+                <img src="img/img1.jpg" alt="Foto de Loren Stefany Tavera Quiroz">
             </div>
-    </div>
+            <h1 class="name">Loren Stefany Tavera Quiroz</h1>
+            <p class="subtitle">Estudiante de Tecnología en Desarrollo de Software</p>
 
-    <div class="informacion">
-        <p class="Titulo1">Informacion personal</p>
-        <p class="Pinfo">Nombres y apellidos: </p>
-        <p class="rinfo"> Loren Stefany Tavera Quiroz</p>  <br>
-        <p class="Pinfo">Direccion: </p>
-        <p class="rinfo"> Calle 62 i sur #75 f 22</p> <br>
-        <p class="Pinfo">Celular: </p>
-        <p class="rinfo"> 3006038931</p> <br>
-        <p class="Pinfo">Correo: </p>
-        <p class="rinfo"> lorenquiroz407@gmail.com/lstaveraq@academia.usbbog.edu.co</p> <br>
-    </div>
+            <section>
+                <h2 class="info-title">Información personal</h2>
+                <address class="info">
+                    Nombres y apellidos:<br>Loren Stefany Tavera Quiroz<br>
+                    Dirección:<br>Calle 62 i sur #75 f 22<br>
+                    Celular:<br>3006038931<br>
+                    Correo: <a href="mailto:lorenquiroz407@gmail.com">lorenquiroz407@gmail.com</a><br>
+                    <a href="mailto:lstaveraq@academia.usbbog.edu.co">lstaveraq@academia.usbbog.edu.co</a><br>
+                </address>
+            </section>
+        </aside>
 
-        
-    <div class="informacion">
-        <p class="Titulo1">Informacion academica</p>
-        <p class="Pinfo">Titulos obtenidos: </p>
-        <p class="rinfo"> Bachiller</p> <br>
-        <p class="Pinfo">Fecha de culminacion: </p>
-        <p class="rinfo"> 02 de diciembre 2022</p> <br>
-        <p class="Pinfo">Institucion: </p>
-        <p class="rinfo"> Colegio cundinamarca I.E.D</p> <br>
-        <p class="Pinfo">En curso: </p>
-        <p class="rinfo"> tecnologia en desarrollo de software</p> <br>
-        <p class="Pinfo">Institucion: </p>
-        <p class="rinfo"> Universidad San Buenaventura</p> <br>
-    </div>
+        <section class="right-section">
+            <section class="section">
+                <h2 class="info-title">Información académica</h2>
+                <p class="info">
+                    Títulos obtenidos: Bachiller<br>
+                    Fecha de culminación: 02 de diciembre 2022<br>
+                    Institución: Colegio Cundinamarca I.E.D<br>
+                    En curso: Tecnología en Desarrollo de Software<br>
+                    Institución: Universidad San Buenaventura
+                </p>
+            </section>
 
-    <div class="informacion">
-        <p class="Titulo1">Objetivo profesional</p>
-        <p class="rinfo"> Estoy interesado en una posición en el área de atención al cliente con el objetivo
-             de adquirir experiencia práctica en el campo. Busco un entorno en el que pueda recibir formación 
-             y desarrollar mis habilidades, dado que tengo facilidad para aprender y un interés constante en 
-             adquirir nuevos conocimientos. Además, deseo que el horario del trabajo permita compatibilizarlo
-            con mis estudios nocturnos en Tecnología en Desarrollo de Software. Poseo una sólida capacidad 
-            de gestión del tiempo, por lo que estoy seguro de que puedo cumplir con ambas responsabilidades
-             de manera eficiente.
-        </p>  <br>
-    </div>
+            <section class="section">
+                <h2 class="info-title">Objetivo profesional</h2>
+                <p class="info">
+                    Estoy interesado en una posición en el área de atención al cliente con el objetivo de adquirir experiencia 
+                    práctica en el campo. Busco un entorno en el que pueda recibir formación y desarrollar mis habilidades, 
+                    dado que tengo facilidad para aprender y un interés constante en adquirir nuevos conocimientos. 
+                    Además, deseo que el horario del trabajo permita compatibilizarlo con mis estudios nocturnos en 
+                    Tecnología en Desarrollo de Software. Poseo una sólida capacidad de gestión del tiempo, por lo que 
+                    estoy seguro de que puedo cumplir con ambas responsabilidades de manera eficiente.
+                </p>
+            </section>
 
-    <div class="informacion">
-        <p class="Titulo1">Experiencia laboral</p>
-        <p class="rinfo"> He desempeñado diversos roles en el ámbito informal, especialmente durante mi 
-            juventud y en temporadas específicas. A pesar de la naturaleza temporal de estos empleos, considero
-             que he demostrado un alto nivel de desempeño, cumpliendo con los horarios establecidos y las 
-             responsabilidades asignadas por mis supervisores. Siempre he abordado mis tareas con una actitud 
-             positiva, pasión y dedicación, buscando cumplir con los estándares de calidad y eficiencia requeridos.
-        </p>  <br>
-    </div>
+            
+            <section class="section">
+                <h2 class="info-title">Experiencia laboral</h2>
+                <p class="info">
+                    He desempeñado diversos roles en el ámbito informal, especialmente durante mi juventud y en 
+                    temporadas específicas. A pesar de la naturaleza temporal de estos empleos, considero que he 
+                    demostrado un alto nivel de desempeño, cumpliendo con los horarios establecidos y las 
+                    responsabilidades asignadas por mis supervisores. Siempre he abordado mis tareas con una actitud 
+                    positiva, pasión y dedicación, buscando cumplir con los estándares de calidad y eficiencia requeridos.
+                </p>
+            </section>
 
-    <div class="informacion">
-        <p class="Titulo1">Habilidades y destrezas</p>       
-        <p class="Pinfo">Idiomas: </p>
-        <p class="rinfo"> Poseo un sólido entendimiento del inglés, tanto en la comprensión escrita como en la lectura. No obstante,
-             encuentro ciertos desafíos al momento de expresarme verbalmente en el idioma.</p>  <br>
-        <p class="Pinfo">Conocimientos informaticos: </p>
-        <p class="rinfo"> Poseo un sólido dominio de las herramientas informáticas, incluyendo una competencia avanzada en los programas 
-            de Microsoft Office y en aplicaciones relevantes para mi carrera, como MySQL, Dev-C++ y Python, entre otros.
-            Adicionalmente, tengo habilidades destacadas en redacción rápida y eficiente, lo cual me permite realizar tareas de manera ágil y precisa.</p> <br>
-        <p class="Pinfo">Habilidades comunicativas: </p>
-        <p class="rinfo"> Considero que poseo una sólida fluidez verbal, que me permite comunicarme de manera efectiva con una amplia variedad de personas.
-             Asimismo, soy capaz de empatizar con los demás y respetar sus decisiones, lo cual contribuye a una interacción colaborativa y 
-             respetuosa. Destaco por mi capacidad de escucha activa y mi compromiso con el cumplimiento riguroso de las normas y procedimientos establecidos.
-        </p> <br>
-        <p class="Pinfo">Otras habilidades </p>
-        <p class="rinfo"> Me distingo en el trabajo en equipo, tanto en roles de liderazgo como en funciones de apoyo, esforzándome por lograr una efectiva resolución
-             de problemas. Estoy abierto a recibir críticas constructivas y gestiono adecuadamente los límites necesarios para mantener un ambiente de trabajo óptimo y 
-             colaborativo.
-        </p> <br>
+            <section class="section">
+                <h2 class="info-title">Habilidades y destrezas</h2>
+                <p class="info">
+                    Idiomas: Poseo un sólido entendimiento del inglés, tanto en la comprensión escrita como en la lectura. 
+                    Encuentro ciertos desafíos al momento de expresarme verbalmente en el idioma.<br><br>
+                    Conocimientos informáticos: Manejo de herramientas como MySQL, Dev-C++ y Python.<br><br>
+                    Habilidades comunicativas: Capacidad de comunicación fluida y escucha activa.<br><br>
+                    Otras habilidades: Trabajo en equipo y resolución de problemas.
+                </p>
+            </section>
 
-        </p>  <br>
-    </div>
+            <section class="section">
+                <h2 class="info-title">Hobbies e intereses</h2>
+                <p class="info">
+                    Aprovecho mi tiempo libre de manera productiva y enriquecedora. Dedico tiempo a la meditación y a la 
+                    autoevaluación, así como a la lectura de libros de interés personal. Disfruto de actividades recreativas 
+                    como los videojuegos y los juegos de mesa, además de realizar caminatas para explorar nuevos lugares. 
+                    Valoro la compañía de amigos y familiares y paso tiempo con las mascotas de mis familiares. También 
+                    me esfuerzo por ser compasivo con los animales en situación de vulnerabilidad, buscando ofrecerles 
+                    cariño y, en la medida de lo posible, un hogar adecuado fuera de la calle.
+                </p>
+            </section>
 
-    <div class="informacion">
-        <p class="Titulo1">Hobbies e intereses</p> 
-        <p class="rinfo"> Aprovecho mi tiempo libre de manera productiva y enriquecedora. Dedico tiempo a la
-             meditación y a la autoevaluación, así como a la lectura de libros de interés personal. Disfruto de
-            actividades recreativas como los videojuegos y los juegos de mesa, además de realizar caminatas
-            para explorar nuevos lugares. Valoro la compañía de amigos y familiares y paso tiempo con las 
-            mascotas de mis familiares. También me esfuerzo por ser compasivo con los animales en situación
-            de vulnerabilidad, buscando ofrecerles cariño y, en la medida de lo posible, un hogar adecuado
-            fuera de la calle.
-        </p>  <br>      
 
-    </div>
+            <section class="section">
+                <h2 class="info-title">Aspectos que mejorar</h2>
+                <p class="info">
+                Reconozco una sensibilidad hacia ciertas situaciones que, aunque es parte de mi naturaleza, me 
+                esfuerzo por gestionar para evitar que influya negativamente en mi desempeño profesional. Trabajo 
+                continuamente en fortalecer mi autocontrol para minimizar el impacto de los errores y mantener una 
+                actitud constructiva. Además, estoy comprometida en mejorar mi disciplina personal, con el objetivo de 
+                exigirme más y alcanzar un mayor nivel de desempeño en mis responsabilidades profesionales.
+                </p>
+            </section>
 
-    <div class="informacion">
-        <p class="Titulo1">Aspectos a mejorar</p> 
-        <p class="rinfo"> Reconozco una sensibilidad hacia ciertas situaciones que, aunque es parte de mi
-             naturaleza, me esfuerzo por gestionar para evitar que influya negativamente en mi desempeño
-            profesional. Trabajo continuamente en fortalecer mi autocontrol para minimizar el impacto de los
-            errores y mantener una actitud constructiva. Además, estoy comprometida en mejorar mi disciplina
-            personal, con el objetivo de exigirme más y alcanzar un mayor nivel de desempeño en mis responsabilidades
-            profesionales.
-        </p>  <br>
-    </div>
-    
 
-    <div class="informacion">
-        <p class="Titulo1">Referencias</p>
-        <p class="Pinfo">Nombre: </p>
-        <p class="rinfo"> Angela Yamile Quiroz Vergel</p> <br>
-        <p class="Pinfo">Parentesco: </p>
-        <p class="rinfo"> Madre</p> <br>
-        <p class="Pinfo">Telefono: </p>
-        <p class="rinfo"> 3023686552</p> <br>
-        <p class="Pinfo">Nombre: </p>
-        <p class="rinfo"> Marily Quiroz Vergel</p> <br>
-        <p class="Pinfo">Parentesco: </p>
-        <p class="rinfo"> Tia</p> <br>
-        <p class="Pinfo">Telefono: </p>
-        <p class="rinfo"> 3138439269</p> <br>
-        <p class="Pinfo">Nombre: </p>
-        <p class="rinfo"> Stefanny Dayana Guillen Puin</p> <br>
-        <p class="Pinfo">Parentesco: </p>
-        <p class="rinfo"> Amiga</p> <br>
-        <p class="Pinfo">Telefono: </p>
-        <p class="rinfo"> 3103399069</p> <br>
-        <p class="Pinfo">Nombre: </p>
-        <p class="rinfo"> Laura Velntina Rodriguez Mondragón</p> <br>
-        <p class="Pinfo">Parentesco: </p>
-        <p class="rinfo"> Amiga</p> <br>
-        <p class="Pinfo">Telefono: </p>
-        <p class="rinfo"> 3144473266</p> <br>
-    
+
+            <section class="section">
+                <h2 class="info-title">Referencias</h2>
+                <ul class="info">
+                    <li>Angela Yamile Quiroz Vergel - Madre <br> Teléfono: 3023686552</li>
+                    <li>Marily Quiroz Vergel - Tía <br> Teléfono: 3138439269</li>
+                    <li>Stefanny Dayana Guillen Puin - Amiga <br> Teléfono: 3103399069</li>
+                    <li>Laura Valentina Rodriguez Mondragón - Amiga <br> Teléfono: 3144473266</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Loren Stefany Tavera Quiroz. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
+
